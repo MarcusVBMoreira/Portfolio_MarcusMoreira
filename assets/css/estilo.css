@@ -40,6 +40,8 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    width: 100vw;
+    height: 100hv;
 }
 body{
     background-color: var(--Branco-cor);
@@ -68,7 +70,7 @@ body{
 .bx-menu{
     top: 2%;
     display: none;
-    right: 25%;
+    right: 20%;
     font-size: 45px;
     position: fixed;
     z-index: 101;
@@ -539,7 +541,190 @@ footer{
 /* ?-----------------------------------------------------------------------------------? */
 /* !RESPONSIVIDADE DO SITE! */
 @media screen and (max-width: 480px){
-
+    .menu{
+        display: none;
+    }
+    .bx-menu{
+        display: flex;
+    }
+    .header{
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 40%;
+        margin-left: 6%;
+    }
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        top: 10%;
+        flex-direction: column-reverse;
+        right: 25%;
+        width: 30%;
+    }
+    .menu.active{
+        display: flex;
+        animation: move1 2.5s;
+    }
+    .voltar{
+        width: 5%;
+    }
+    .logo_infos{
+        width: 40%;
+    }
+    .redes_menu{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .nav_menu{
+        flex-direction: column;
+    }
+    .infos_sobre p{
+        font-size: 0.9em;
+    }
+    .redes_menu a{
+        width: 20%;
+    }
+    .infos_direita{
+        width: 100%;
+    }
+    .balao6{
+        top: 60%;
+    }
+    .link{
+        width: 100%;
+    }
+    .infos_esquerda{
+        width: 50%;
+    }
+    .nome_projeto h1{
+        font-size: 2.5em;
+    }
+    .itens_menu{
+        width: 100%;
+    }
+    .nav_menu a{
+        margin-bottom: 10%;
+    }
+    @keyframes move1 {
+        0%{
+            right: -20%;
+        }
+        100%{
+            right: 25%;
+        }
+    }
+    .sobre_container{
+        flex-direction: column;
+    }
+    .infos_sobre{
+        width: 100%;
+    }
+    .img_sobre{
+        width: 35%;
+        margin-bottom: 10%;
+    }
+    .img_marcus{
+        width: 100%;
+    }
+    .img_borda{
+        width: 37%;
+        height: 25%;
+    }
+    .borda_img{
+        padding: 40%;
+        padding-bottom: 66%;
+    }
+    .projetos{
+        width: 100%;
+        margin-bottom: 6%;
+    }
+    .titulo h1{
+        font-size: 1.4em;
+    }
+    .proj_img{
+        height: 200px;
+    }
+    .container_contato{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+    .item h2{
+        font-size: 0.8em;
+    }
+    .balao1{
+        padding: 30%;
+        top: -6%;
+    }
+    .balao2{
+        left: 87%;
+        padding: 15%;
+        padding-top: 65%;
+    }
+    .balao3{
+        top: 65%;
+        padding: 35%;
+        left: -40%;
+    }
+    .balao4{
+        top: 90%;
+        padding: 10%;
+    }
+    .infos_extra{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link_projeto{
+        width: 100%;
+    }.infos_projeto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .categoria strong, .cliente strong{
+        font-size: 1.1em;
+    }
+    .categoria h2, .cliente h2{
+        font-size: 1.1em;
+    }
+    .categoria{
+        width: 100%;
+    }
+    .sobre_projeto p{
+        font-size: 1.3em;
+    }
+}
+@media screen and (min-width: 500px) and (max-width:550px){
+    .img_borda{
+        width: 38%;
+        height: 28%;
+    }
+}
+@media screen and (min-width: 550px) and (max-width:600px){
+    .img_borda{
+        width: 38%;
+        height: 31%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width:650px){
+    .img_borda{
+        width: 38%;
+        height: 34%;
+    }
+}
+@media screen and (min-width: 650px) and (max-width:700px){
+    .img_borda{
+        width: 38%;
+        height: 37%;
+    }
+}
+@media screen and (min-width: 700px) and (max-width:767px){
+    .img_borda{
+        width: 38%;
+        height: 40%;
+    }
 }
 
 /* ?-----------------------------------------? */
