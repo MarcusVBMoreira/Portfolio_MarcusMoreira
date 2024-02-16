@@ -70,7 +70,7 @@ body{
 .bx-menu{
     top: 2%;
     display: none;
-    right: 20%;
+    right: 5%;
     font-size: 45px;
     position: fixed;
     z-index: 101;
@@ -153,9 +153,9 @@ img{
     width: 100%;
 }
 .balao1{
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: -30%;
+    top: -60%;
     left: -20%;
     border-radius: 50%;
     background-color: var(--VerdeClaro-cor);
@@ -163,18 +163,18 @@ img{
     padding: 25%;
 }
 .balao2{
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: 28%;
-    left: 85%;
+    top: 8%;
+    left: 90%;
     border-radius: 50%;
     background-color: var(--AzulEscuro-cor);
     padding: 15%;
-    padding-top: 25%;
+    padding-top: 20%;
     opacity: 0.9;
 }
 .balao3{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 55%;
     left: -20%;
@@ -184,7 +184,7 @@ img{
     padding: 15%;
 }
 .balao4{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 85%;
     left: 88%;
@@ -195,28 +195,28 @@ img{
     opacity: 0.5;
 }
 .balao5{
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: -10%;
+    top: -20%;
     right: -10%;
     border-radius: 50%;
     background-color: var(--VerdeClaro-cor);
     opacity: 0.6;
-    padding: 15%;
+    padding: 13%;
 }
 .balao6{
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    top: 25%;
-    left: -25%;
+    top: 28%;
+    left: -10%;
     border-radius: 50%;
     background-color: var(--AzulEscuro-cor);
-    padding: 25%;
-    padding-top: 45%;
+    padding: 10%;
+    padding-top: 20%;
     opacity: 0.9;
 }
 .balao7{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 60%;
     right: -15%;
@@ -656,12 +656,14 @@ footer{
     }
     .balao1{
         padding: 30%;
-        top: -6%;
+        top: -12%;
+        left: -8%;
     }
     .balao2{
         left: 87%;
         padding: 15%;
-        padding-top: 65%;
+        padding-top: 40%;
+        top: 20%;
     }
     .balao3{
         top: 65%;
@@ -671,6 +673,21 @@ footer{
     .balao4{
         top: 90%;
         padding: 10%;
+    }
+    .balao5{
+        top: -15%;
+        right: -25%;
+        padding: 30%;
+    }
+    .balao6{
+        padding: 25%;
+        padding-bottom: 40%;
+        left: -30%;
+        top: 40%;
+    }
+    .balao7{
+        padding: 30%;
+        top: 80%;
     }
     .infos_extra{
         justify-content: space-around;
@@ -806,12 +823,12 @@ footer{
     }
     .balao1{
         padding: 30%;
-        top: -6%;
+        top: -20%;
     }
     .balao2{
         left: 87%;
-        padding: 15%;
-        padding-top: 65%;
+        padding: 35%;
+        padding-top: 40%;
     }
     .balao3{
         top: 65%;
@@ -821,6 +838,23 @@ footer{
     .balao4{
         top: 90%;
         padding: 10%;
+    }
+    .balao4{
+        top: 80%;
+    }
+    .balao5{
+        top: -15%;
+        right: -25%;
+        padding: 30%;
+    }
+    .balao6{
+        padding: 25%;
+        padding-bottom: 40%;
+        left: -30%;
+    }
+    .balao7{
+        padding: 30%;
+        top: 80%;
     }
     .infos_extra{
         justify-content: space-around;
@@ -914,20 +948,29 @@ footer{
         margin-top: 4%;
     }
     .balao1{
-        top: -10%;
+        top: -30%;
     }
     .balao2{
-        top: 10%;
-        left: 88%;
+        top: 5%;
+        left: 90%;
         padding: 20%;
-        padding-top: 70%;
+        padding-top: 30%;
     }
     .balao3{
-        padding: 40%;
-        left: -63%;
+        padding: 20%;
+        left: -30%;
     }
     .balao4{
-        top: 94%;
+        top: 80%;
+    }
+    .balao5{
+        top: -10%;
+        right: -5%;
+    }
+    .balao6{
+        padding: 15%;
+        padding-bottom: 30%;
+        left: -20%;
     }
     .infos_extra{
         justify-content: space-around;
@@ -984,7 +1027,7 @@ footer{
         width: 60%;
     }
     .balao1{
-        top: -22%;
+        top: -40%;
     }
 }
 @media screen and (min-width: 1100px) and (max-width: 1200px){
