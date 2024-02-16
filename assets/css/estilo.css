@@ -68,7 +68,7 @@ body{
 .bx-menu{
     top: 2%;
     display: none;
-    right: 20%;
+    right: 25%;
     font-size: 45px;
     position: fixed;
     z-index: 101;
