@@ -30,3 +30,12 @@ function mouseEmCimaInstagram(imagem) {
  function mouseForaInstagram(imagem) {
     imagem.src='assets/img/icons/instagram.png'
 }
+
+
+/* Menu responsivo */
+function menu_clicou(){
+    document.getElementById('menu-icon').classList.toggle('bx-x');
+    document.getElementById('menu_responsivo').classList.toggle('active');
+    document.getElementById('menu').classList.toggle('active');
+    document.getElementById('nav_menu').classList.toggle('active');
+}

@@ -39,7 +39,6 @@
 /* !HOME! */
 html{
     scroll-behavior: smooth;
-    max-width: 100%;
     overflow-x: hidden;
 }
 body{
@@ -55,7 +54,7 @@ body{
     padding-bottom: 2%;
     justify-content: center;
     position: relative;
-    z-index: 99;
+    z-index: 101;
 }
 .logo{
     width: 20%;
@@ -65,6 +64,37 @@ body{
 }
 .logo_img{
     width: 100%;
+}
+.bx-menu{
+    top: 2%;
+    display: none;
+    right: 20%;
+    font-size: 45px;
+    position: fixed;
+    z-index: 101;
+}
+.menu_responsivo{
+    display: none;
+    z-index: 100;
+    background-color: var(--BegeClaro-cor);
+    height: 110%;
+    width: 60%;
+    right: 0;
+    position: fixed;
+    border-left: solid 1px;
+    top: -10%;
+}
+.menu_responsivo.active{
+    display: block;
+    animation: move 2s;
+}
+@keyframes move {
+    0%{
+        right: -50%;
+    }
+    100%{
+        right: 0%;
+    }
 }
 .menu{
     width: 70%;
@@ -201,6 +231,7 @@ img{
 }
 
 /* ?-----------------------------------------? */
+/* ?-----------------------------------------? */
 /* *SOBRE* */
 .sobre{
     width: 100%;
@@ -257,6 +288,7 @@ img{
 }
 
 /* ?-----------------------------------------? */
+/* ?-----------------------------------------? */
 /* *PORTFÓLIO* */
 .portfolio{
     width: 100%;
@@ -309,6 +341,7 @@ img{
     border-radius: 6%;
 }
 
+/* ?-----------------------------------------? */
 /* ?-----------------------------------------? */
 /* *CONTATO* */
 .contato{
@@ -447,6 +480,7 @@ footer{
 }
 .sobre_projeto p{
     font-size: 1.4em;
+    text-indent: 15px;
 }
 .infos_extra{
     width: 90%;
@@ -500,4 +534,297 @@ footer{
 .img4_projeto{
     width: 80%;
     padding: 2%;
+}
+/* ?-----------------------------------------------------------------------------------? */
+/* ?-----------------------------------------------------------------------------------? */
+/* !RESPONSIVIDADE DO SITE! */
+@media screen and (max-width: 480px){
+
+}
+
+/* ?-----------------------------------------? */
+/* ?-----------------------------------------? */
+@media screen and (min-width: 480px) and (max-width:767px){
+    .menu{
+        display: none;
+    }
+    .bx-menu{
+        display: flex;
+    }
+    .header{
+        justify-content: flex-start;
+    }
+    .logo{
+        width: 30%;
+        margin-left: 6%;
+    }
+    .menu{
+        position: fixed;
+        flex-direction: column;
+        top: 10%;
+        flex-direction: column-reverse;
+        right: 25%;
+        width: 30%;
+    }
+    .menu.active{
+        display: flex;
+        animation: move1 2.5s;
+    }
+    .redes_menu{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .nav_menu{
+        flex-direction: column;
+    }
+    .itens_menu{
+        width: 100%;
+    }
+    .nav_menu a{
+        margin-bottom: 10%;
+    }
+    @keyframes move1 {
+        0%{
+            right: -20%;
+        }
+        100%{
+            right: 25%;
+        }
+    }
+    .sobre_container{
+        flex-direction: column;
+    }
+    .infos_sobre{
+        width: 100%;
+    }
+    .img_sobre{
+        width: 35%;
+        margin-bottom: 10%;
+    }
+    .img_marcus{
+        width: 100%;
+    }
+    .img_borda{
+        width: 37%;
+        height: 25%;
+    }
+    .borda_img{
+        padding: 40%;
+        padding-bottom: 66%;
+    }
+    .projetos{
+        width: 100%;
+        margin-bottom: 6%;
+    }
+    .titulo h1{
+        font-size: 1.8em;
+    }
+    .container_contato{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+    .balao1{
+        padding: 30%;
+        top: -6%;
+    }
+    .balao2{
+        left: 87%;
+        padding: 15%;
+        padding-top: 65%;
+    }
+    .balao3{
+        top: 65%;
+        padding: 35%;
+        left: -40%;
+    }
+    .balao4{
+        top: 90%;
+        padding: 10%;
+    }
+    .infos_extra{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link_projeto{
+        width: 100%;
+    }.infos_projeto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo_infos {
+        width: 30%;
+    }
+}
+@media screen and (min-width: 500px) and (max-width:550px){
+    .img_borda{
+        width: 38%;
+        height: 28%;
+    }
+}
+@media screen and (min-width: 550px) and (max-width:600px){
+    .img_borda{
+        width: 38%;
+        height: 31%;
+    }
+}
+@media screen and (min-width: 600px) and (max-width:650px){
+    .img_borda{
+        width: 38%;
+        height: 34%;
+    }
+}
+@media screen and (min-width: 650px) and (max-width:700px){
+    .img_borda{
+        width: 38%;
+        height: 37%;
+    }
+}
+@media screen and (min-width: 700px) and (max-width:767px){
+    .img_borda{
+        width: 38%;
+        height: 40%;
+    }
+}
+
+/* ?-----------------------------------------? */
+/* ?-----------------------------------------? */
+/* !PARA NOTEBOOK! */
+@media screen and (min-width: 767px) and (max-width: 1024px){
+    html{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+    }
+    .itens_menu{
+        width: 70%;
+    }
+    .nav_menu a{
+        font-size: 1.2em;
+    }
+    .infos_sobre p{
+        font-size: 0.85em;
+    }
+    .sobre_container{
+        gap: 0;
+    }
+    .infos_sobre{
+        width: 75%;
+    }
+    .img_sobre{
+        width: 30%;
+    }
+    .img_marcus{
+        width: 85%;
+    }
+    .img_borda{
+        width: 25.5%;
+        height: 69%;
+    }
+    .titulo h1{
+        font-size: 1.85em;
+    }
+    .item h2{
+        font-size: 0.8em;
+    }
+    .projetos{
+        width: 80%;
+    }
+    .proj2, .proj3{
+        margin-top: 4%;
+    }
+    .balao1{
+        top: -10%;
+    }
+    .balao2{
+        top: 10%;
+        left: 88%;
+        padding: 20%;
+        padding-top: 70%;
+    }
+    .balao3{
+        padding: 40%;
+        left: -63%;
+    }
+    .balao4{
+        top: 94%;
+    }
+    .infos_extra{
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .link_projeto{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 850px) and (max-width: 950px){
+    .infos_sobre p{
+        font-size: 0.95em;
+    }
+    .proj_img{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 950px) and (max-width: 1024px){
+    .infos_sobre p{
+        font-size: 1.04em;
+    }
+    .proj_img{
+        height: 400px;
+    }
+}
+
+/* ?-----------------------------------------? */
+/* ?-----------------------------------------? */
+/* !PAPRA COMPUTADOR! */
+@media screen and (min-width: 1024px) and (max-width: 1450px){
+    .nav_menu a{
+        font-size: 1.3em;
+    }
+    .sobre_container{
+        gap: 0;
+    }
+    .infos_sobre{
+        width: 75%;
+    }
+    .infos_sobre p{
+        font-size: 0.87em;
+    }
+    .projetos{
+        width: 40%;
+    }
+    .proj3{
+        margin-top: 2%;
+    }
+    .item h2{
+        font-size: 1em;
+    }
+    .link_projeto{
+        width: 60%;
+    }
+    .balao1{
+        top: -22%;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px){
+    .infos_sobre p{
+        font-size: 0.93em;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px){
+    .infos_sobre p{
+        font-size: 1em;
+    }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px){
+    .infos_sobre p{
+        font-size: 1.1em;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1450px){
+    .infos_sobre p{
+        font-size: 1.1em;
+    }
 }

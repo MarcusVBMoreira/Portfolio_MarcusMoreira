@@ -11,6 +11,9 @@
         <!-- !CSS! -->
         <link rel="stylesheet" href="assets/css/estilo.css">
 
+        <!-- !ICON! -->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
         <!-- !FAVICON! -->
 
     </head>
@@ -21,7 +24,7 @@
                     <img src="assets/img/logo/Logo_menor.png" class="logo_img" alt="Logo Marcus Moreira">
                 </a>
             </div>
-            <div class="menu">
+            <div class="menu" id="menu">
                 <div class="redes_menu">
                     <a target="_blank" href="https://wa.me/5511997076335"><img src="assets/img/icons/whatsapp.png" onMouseOver="mouseEmCimaWhatsApp(this)" onMouseOut="mouseForaWhatsApp(this)" class="icons" alt="Icone Whatsapp"></a>
                     <a target="_blank" href="https://www.instagram.com/marcus__vb/"><img src="assets/img/icons/instagram.png" onMouseOver="mouseEmCimaInstagram(this)" onMouseOut="mouseForaInstagram(this)" class="icons" alt="Icone Instagram"></a>
@@ -29,14 +32,16 @@
                     <a target="_blank" href="https://www.linkedin.com/in/marcusvbmoreira/"><img src="assets/img/icons/linkedin.png" onMouseOver="mouseEmCimaLinkedin(this)" onMouseOut="mouseForaLinkedin(this)" class="icons" class="icons" alt="Icone Linkedin"></a>
                 </div>
                 <div class="itens_menu">
-                    <div class="nav_menu">
-                        <a id="header_sobre" href="#sobre">Sobre</a>
-                        <a id="header_portfolio" href="#portfolio">Portfólio</a>
-                        <a id="header_contato" href="#contato">Contato</a>
+                    <div class="nav_menu" id="nav_menu">
+                        <a class="nav_menu_item" id="header_sobre" href="#sobre">Sobre</a>
+                        <a class="nav_menu_item" id="header_portfolio" href="#portfolio">Portfólio</a>
+                        <a class="nav_menu_item" id="header_contato" href="#contato">Contato</a>
                     </div>
                 </div>
             </div>
         </header>
+        <i class='bx bx-menu' id="menu-icon" onclick="menu_clicou()"></i>
+        <div class="menu_responsivo" id="menu_responsivo"></div>
         <div class="container">
             <section class="sobre" id="sobre">
                 <div class="sobre_container">
